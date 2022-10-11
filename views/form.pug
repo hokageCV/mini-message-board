@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    h3  Add New Message
+    //- form to input new message 
+    form(action='/new' , method="POST")
+        input(placeholder="name", name="username")
+        input(placeholder="message", name="msgText")
+        button(type="submit") Submit

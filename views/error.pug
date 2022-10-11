@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h3 kuch toh gadbadh hai 
+  h1= message
+  h2= error.status
+  pre #{error.stack}
+  br 
+  br 
+  hr 
+  a( class="errorPage", href="/")
+    button Home page

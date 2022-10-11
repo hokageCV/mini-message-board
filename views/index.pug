@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  div(class="container")
+    h1= title
+    //- display all data from messages array
+    each msg in messages 
+      div(class="msgBox")
+        h4 #{msg.user}
+        p message : #{msg.text}
+        p date : #{msg.added}
+    a( href="/new")
+      button(class="newMsgButton") Add message
+  

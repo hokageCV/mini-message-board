@@ -1,0 +1,77 @@
+:root{
+  --background: #e87a5d ;
+  --text : #f3b941;
+  --heading : #3b5ba5;
+  --darkBackground: #d8451f;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: var(--background);
+}
+
+a {
+  color: #00B7FF;
+}
+
+.container{
+  width: 60%;
+  margin: 1% auto;
+}
+
+.container h1{
+  color: var(--heading)
+}
+
+/* ============== individual message ============= */
+.msgBox{
+  margin: 30px 2px;
+  color: var(--text);
+  /* border: 2px dashed orange; */
+  font-size: 22px;
+}
+
+.msgBox h4, 
+.msgBox p{
+  margin: 0px;
+  padding: 0px;
+}
+
+.newMsgButton{
+  margin:5px;
+  background-color: var(--darkBackground);
+  color: var(--text);
+}
+
+
+/* ============== new message ============= */
+form{
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  color: var(--heading);
+}
+
+form input{
+  width: 30%;
+  background-color: var(--background);
+  color: var(--text);
+  border-color: var(--heading);
+  margin: 10px;
+}
+form button{
+  background-color: var(--darkBackground);
+  color: var(--text);
+  width: 15%;
+  margin: 10px;
+  border-color: var(--heading);
+}
+
+/* ============== error page ============= */
+.errorPage button{
+  background-color: var(--darkBackground);
+  border-color: var(--heading);
+  color: var(--text);
+}
